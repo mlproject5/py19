@@ -7,6 +7,14 @@ st.set_page_config(page_title='Fake', page_icon='f.png', layout="centered", init
                    menu_items=None)
 
 
+hide_streamlit_style = """
+    <style>
+    footer {visibility: hidden;}
+    </style>
+    """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+
 def usa():
     fake = Faker()
 
